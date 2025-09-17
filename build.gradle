@@ -10,7 +10,7 @@ description = 'Demo project for Spring Boot'
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
@@ -36,3 +36,16 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+//
+//sonar {
+//    properties {
+//        property "sonar.projectKey", "xiaoqiang-ma_cicd-demo"
+//        property "sonar.organization", "xiaoqiang-ma"
+//        property "sonar.host.url", "https://sonarcloud.io"
+//        property "sonar.sources", "src/main/java"
+//        property "sonar.tests", "src/test/java"
+//        property "sonar.java.binaries", "build/classes/java/main"
+//        property "sonar.java.test.binaries", "build/classes/java/test"
+//        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+//    }
+//}
